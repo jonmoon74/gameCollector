@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AWo-eB-OwV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,113 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gameCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7Oz-mV-9Ii">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pYk-ET-3Ik">
+                            <connections>
+                                <segue destination="54P-Ky-cWN" kind="show" id="HbY-Je-8Ap"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="860" y="132.68365817091455"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="XfK-jh-az0">
+            <objects>
+                <viewController id="54P-Ky-cWN" customClass="GameViewController" customModule="gameCollector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xhi-ku-r22">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epic wallpaper3 .jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Hdd-6f-yJx">
+                                <rect key="frame" x="37" y="84" width="300" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="EBF-3q-RfQ"/>
+                                    <constraint firstAttribute="width" constant="300" id="Phe-nt-Foo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Rll-LV-pRA"/>
+                                    <constraint firstAttribute="height" constant="175" id="SX9-Se-RUA"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5d-jJ-uJl">
+                                <rect key="frame" x="37.5" y="304" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPe-Jr-zTE">
+                                <rect key="frame" x="172" y="371" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="54P-Ky-cWN" eventType="touchUpInside" id="y64-rI-R4Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hdd-6f-yJx" firstAttribute="top" secondItem="i3s-Rg-Jsn" secondAttribute="top" constant="20" id="2IE-wH-bKQ"/>
+                            <constraint firstItem="hPe-Jr-zTE" firstAttribute="top" secondItem="e5d-jJ-uJl" secondAttribute="bottom" constant="40" id="FcL-6H-GfG"/>
+                            <constraint firstItem="hPe-Jr-zTE" firstAttribute="centerX" secondItem="Xhi-ku-r22" secondAttribute="centerX" id="JLz-oD-T99"/>
+                            <constraint firstItem="e5d-jJ-uJl" firstAttribute="top" secondItem="Hdd-6f-yJx" secondAttribute="bottom" constant="59" id="N1j-xL-TXe"/>
+                            <constraint firstItem="Hdd-6f-yJx" firstAttribute="centerX" secondItem="Xhi-ku-r22" secondAttribute="centerX" id="dcz-va-Udo"/>
+                            <constraint firstItem="hPe-Jr-zTE" firstAttribute="top" secondItem="e5d-jJ-uJl" secondAttribute="bottom" constant="37" id="jWQ-kI-hfY"/>
+                            <constraint firstItem="e5d-jJ-uJl" firstAttribute="top" secondItem="Hdd-6f-yJx" secondAttribute="bottom" constant="45" id="kor-Da-fUw"/>
+                            <constraint firstItem="e5d-jJ-uJl" firstAttribute="width" secondItem="Hdd-6f-yJx" secondAttribute="width" id="ve4-Sh-mYY"/>
+                            <constraint firstItem="e5d-jJ-uJl" firstAttribute="centerX" secondItem="Xhi-ku-r22" secondAttribute="centerX" id="xjE-Fp-YTA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i3s-Rg-Jsn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sur-PQ-lnc">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="WKE-bm-vH9">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="54P-Ky-cWN" id="pGH-PV-fHu"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="faG-2a-7Hw">
+                                <connections>
+                                    <action selector="photosTapped:" destination="54P-Ky-cWN" id="buw-LT-xJa"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gameImageView" destination="Hdd-6f-yJx" id="6PX-Pq-lch"/>
+                        <outlet property="titleTextField" destination="e5d-jJ-uJl" id="pG9-b7-KB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igh-mu-bgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6sC-so-6Nz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AWo-eB-OwV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jJE-gS-37J">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dTs-en-hjs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWc-vJ-Uzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="epic wallpaper3 .jpeg" width="284" height="177"/>
+    </resources>
 </document>

@@ -13,6 +13,8 @@
 		454FF39D20D6F35700843190 /* gameCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 454FF39B20D6F35700843190 /* gameCollector.xcdatamodeld */; };
 		454FF39F20D6F35A00843190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454FF39E20D6F35A00843190 /* Assets.xcassets */; };
 		454FF3A220D6F35A00843190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454FF3A020D6F35A00843190 /* LaunchScreen.storyboard */; };
+		45A7D96A20D843CD008607FD /* epic wallpaper3 .jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 45A7D96920D843CD008607FD /* epic wallpaper3 .jpeg */; };
+		45A7D96C20D8462F008607FD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A7D96B20D8462F008607FD /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		454FF39E20D6F35A00843190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454FF3A120D6F35A00843190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		454FF3A320D6F35A00843190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A7D96920D843CD008607FD /* epic wallpaper3 .jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "epic wallpaper3 .jpeg"; sourceTree = "<group>"; };
+		45A7D96B20D8462F008607FD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		454FF39320D6F35700843190 /* gameCollector */ = {
 			isa = PBXGroup;
 			children = (
+				45A7D96920D843CD008607FD /* epic wallpaper3 .jpeg */,
 				454FF39420D6F35700843190 /* AppDelegate.swift */,
 				454FF39620D6F35700843190 /* ViewController.swift */,
+				45A7D96B20D8462F008607FD /* GameViewController.swift */,
 				454FF39820D6F35700843190 /* Main.storyboard */,
 				454FF39E20D6F35A00843190 /* Assets.xcassets */,
 				454FF3A020D6F35A00843190 /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				454FF3A220D6F35A00843190 /* LaunchScreen.storyboard in Resources */,
+				45A7D96A20D843CD008607FD /* epic wallpaper3 .jpeg in Resources */,
 				454FF39F20D6F35A00843190 /* Assets.xcassets in Resources */,
 				454FF39A20D6F35700843190 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A7D96C20D8462F008607FD /* GameViewController.swift in Sources */,
 				454FF39720D6F35700843190 /* ViewController.swift in Sources */,
 				454FF39520D6F35700843190 /* AppDelegate.swift in Sources */,
 				454FF39D20D6F35700843190 /* gameCollector.xcdatamodeld in Sources */,
