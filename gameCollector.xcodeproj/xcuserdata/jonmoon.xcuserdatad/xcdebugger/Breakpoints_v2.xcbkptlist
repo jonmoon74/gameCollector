@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gameCollector/ViewController.swift"
+            timestampString = "551477289.4937609"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gameCollector.ViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "gameCollector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonmoon/Documents/Coding/xcode/gameCollector/gameCollector/ViewController.swift"
+                  timestampString = "551476906.156423"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "814">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gameCollector.ViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "gameCollector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonmoon/Documents/Coding/xcode/gameCollector/gameCollector/ViewController.swift"
+                  timestampString = "551476906.165338"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "914">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
