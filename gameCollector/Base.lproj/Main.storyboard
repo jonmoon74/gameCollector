@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="7Oz-mV-9Ii">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pYk-ET-3Ik">
                             <connections>
-                                <segue destination="54P-Ky-cWN" kind="show" id="HbY-Je-8Ap"/>
+                                <segue destination="54P-Ky-cWN" kind="show" identifier="gameSegue" id="HbY-Je-8Ap"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -78,13 +78,23 @@
                                     <action selector="addTapped:" destination="54P-Ky-cWN" eventType="touchUpInside" id="y64-rI-R4Y"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAC-RW-QhV">
+                                <rect key="frame" x="165" y="409" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="54P-Ky-cWN" eventType="touchUpInside" id="lN6-LA-FSq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Hdd-6f-yJx" firstAttribute="top" secondItem="i3s-Rg-Jsn" secondAttribute="top" constant="20" id="2IE-wH-bKQ"/>
+                            <constraint firstItem="cAC-RW-QhV" firstAttribute="centerX" secondItem="Xhi-ku-r22" secondAttribute="centerX" id="FDI-g0-ncL"/>
                             <constraint firstItem="hPe-Jr-zTE" firstAttribute="top" secondItem="e5d-jJ-uJl" secondAttribute="bottom" constant="40" id="FcL-6H-GfG"/>
                             <constraint firstItem="hPe-Jr-zTE" firstAttribute="centerX" secondItem="Xhi-ku-r22" secondAttribute="centerX" id="JLz-oD-T99"/>
                             <constraint firstItem="e5d-jJ-uJl" firstAttribute="top" secondItem="Hdd-6f-yJx" secondAttribute="bottom" constant="59" id="N1j-xL-TXe"/>
+                            <constraint firstItem="cAC-RW-QhV" firstAttribute="top" secondItem="hPe-Jr-zTE" secondAttribute="bottom" constant="8" id="Odd-V9-g5x"/>
+                            <constraint firstItem="cAC-RW-QhV" firstAttribute="top" secondItem="hPe-Jr-zTE" secondAttribute="bottom" constant="8" id="YZ6-Of-zFc"/>
                             <constraint firstItem="Hdd-6f-yJx" firstAttribute="centerX" secondItem="Xhi-ku-r22" secondAttribute="centerX" id="dcz-va-Udo"/>
                             <constraint firstItem="hPe-Jr-zTE" firstAttribute="top" secondItem="e5d-jJ-uJl" secondAttribute="bottom" constant="37" id="jWQ-kI-hfY"/>
                             <constraint firstItem="e5d-jJ-uJl" firstAttribute="top" secondItem="Hdd-6f-yJx" secondAttribute="bottom" constant="45" id="kor-Da-fUw"/>
@@ -108,6 +118,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addupdatebutton" destination="hPe-Jr-zTE" id="hfy-vg-yKX"/>
+                        <outlet property="deleteButton" destination="cAC-RW-QhV" id="4v8-Xf-Ont"/>
                         <outlet property="gameImageView" destination="Hdd-6f-yJx" id="6PX-Pq-lch"/>
                         <outlet property="titleTextField" destination="e5d-jJ-uJl" id="pG9-b7-KB2"/>
                     </connections>
